@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="446.0" prefWidth="1131.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zak.controller.MainController">
+   <children>
+      <AnchorPane layoutX="222.0" prefHeight="446.0" prefWidth="909.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Pane layoutX="1.0" prefHeight="430.0" prefWidth="908.0" style="-fx-background-color: #2efcD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <fx:include fx:id="categorieContent" source="Categorie.fxml" visible="false" />
+                  <fx:include fx:id="agentnContent" source="Agent.fxml" visible="false" />
+                  <fx:include fx:id="agenceContent" source="Agence.fxml" visible="false" /> 
+                  <fx:include fx:id="clientContent" source="Client.fxml" visible="false" /> 
+                  <fx:include fx:id="SoutCatContent" source="SousCategorie.fxml" visible="false" /> 
+                  <fx:include fx:id="CompteCatContent" source="Compte.fxml" visible="true" /> 
+                  
+                  
+                  
+               </children></Pane>
+            
+			<!--<fx:include source="Login.fxml" />-->         	
+         </children></AnchorPane>
+      <AnchorPane prefHeight="430.0" prefWidth="216.0" style="-fx-background-color: #f0f7ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="430.0" prefWidth="41.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="3.0" layoutY="110.0" onAction="#agenceGenerator" prefHeight="46.0" prefWidth="216.0" text="Agances">
+               <graphic>
+                  <MaterialDesignIconView fill="#2772a8" glyphName="BUILDING" size="15" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutY="82.0" onAction="#GenerateMethode" prefHeight="46.0" prefWidth="216.0" ripplerFill="#2875ab" text="Categorie" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="64.0">
+               <graphic>
+                  <FontAwesomeIconView />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="3.0" layoutY="156.0" onAction="#agentGenerator" prefHeight="46.0" prefWidth="216.0" text="Agents">
+               <graphic>
+                  <MaterialDesignIconView fill="#2772a8" size="15" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="7.0" layoutY="202.0" onAction="#clientGenerate" prefHeight="46.0" prefWidth="216.0" text="Clients" AnchorPane.leftAnchor="3.0">
+               <graphic>
+                  <MaterialDesignIconView fill="#2772a8" size="15" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="3.0" layoutY="248.0" onAction="#SousCatGenerat" prefHeight="46.0" prefWidth="216.0" text="SousCategorie">
+               <graphic>
+                  <MaterialDesignIconView fill="#2772a8" size="15" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="3.0" layoutY="294.0" onAction="#CompteGenerat" prefHeight="46.0" prefWidth="216.0" text="Type Compte">
+               <graphic>
+                  <MaterialDesignIconView fill="#2772a8" glyphName="alarm" size="15" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
