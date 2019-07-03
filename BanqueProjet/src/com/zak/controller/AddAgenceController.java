@@ -32,7 +32,7 @@ public class AddAgenceController {
 	
 	private AgenceController fatherGUI;
 
-	
+	//comm
 	public void updateAction(ActionEvent e) {
 		Agence agence = new Agence();
 		agence.setAdresse(txtAdresse.getText());
